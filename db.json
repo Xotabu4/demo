@@ -25,12 +25,12 @@
           "postId": 1
         },
         {
-          "body": "some comment",
-          "postId": 1
+          "body": "Not bad!",
+          "postId": 2
         },
         {
-          "body": "some comment",
-          "postId": 1
+          "body": "I like it!",
+          "postId": 3
         }
       ]
     },
@@ -38,7 +38,7 @@
       "id": 2,
       "comments": [
         {
-          "body": "Very nice hotel! amazing",
+          "body": "Will visit again!",
           "postId": 1
         }
       ]
