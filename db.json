@@ -1,14 +1,77 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hilton Hotel",
+      "stars": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Ramada Hotel",
+      "stars": 3
+    },
+    {
+      "id": 3,
+      "name": "Ibis Hotel",
+      "stars": 5
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+    {
+      "hotelid": 1,
+      "comments": [
+        {
+          "body": "Very nice hotel! amazing",
+          "postId": 1
+        },
+        {
+          "body": "some comment",
+          "postId": 1
+        },
+        {
+          "body": "some comment",
+          "postId": 1
+        }
+      ]
+    },
+    {
+      "hotelid": 2,
+      "comments": [
+        {
+          "body": "Very nice hotel! amazing",
+          "postId": 1
+        }
+      ]
+    },
+    {
+      "hotelid": 2,
+      "comments": []
+    }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "buy": [
+    {
+      "id": 1,
+      "status": 0,
+      "message": "Successfully purchased!",
+      "code": 5555
+    },
+    {
+      "id": 2,
+      "status": 1,
+      "message": "Error! Not enough money",
+      "code": -1
+    },
+    {
+      "id": 3,
+      "status": 2,
+      "message": "Error! No free rooms!",
+      "code": -2
+    },
+    {
+      "id": 4,
+      "status": 3,
+      "message": "Error! No such hotel!",
+      "code": -3
+    }
+  ]
 }
