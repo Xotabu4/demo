@@ -1,14 +1,21 @@
-# Fake API server for API testing presentation
+# Typescript tests against fake API server
 
-## Try it
+This project is for API tests presentation as demo
 
+## API
 [https://my-json-server.typicode.com/Xotabu4/demo](https://my-json-server.typicode.com/Xotabu4/demo)
 
+### RAML file
+-> api.raml
 
-## Use your own data
-Fork it and change `db.json` values or create a repo with a `db.json` file.
+## Run tests:
+`npm test`
 
-
-
-## RAML file
-api.raml
+##
+Used technologies:
+- typescript
+- ts-node
+- mocha
+- chai
+- allure reports
+- raml-parser
