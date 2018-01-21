@@ -1,3 +1,5 @@
 --require ts-node/register
 --watch-extensions ts
-tests/**/*.ts
+--slow 2000
+--timeout 5000
+test/**/*.ts
