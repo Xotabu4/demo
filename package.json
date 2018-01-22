@@ -4,7 +4,10 @@
   "description": "demo project for api tests presentation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --opts mocha.opts"
+    "test": "mocha --opts mocha.opts",
+    "generate": "allure generate",
+    "report": "allure open",
+    "allure": "allure"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,7 @@
     "@types/node": "7.0.43",
     "@types/request": "2.0.0",
     "@types/request-promise-native": "1.0.6",
-    "allure-commandline": "^2.3.5",
+    "allure-commandline": "^2.5.0",
     "chai": "4.1.0",
     "install": "^0.10.2",
     "mocha": "^3.4.1",
@@ -34,7 +37,7 @@
     "request-promise": "^4.2.2",
     "request-promise-native": "^1.0.5",
     "ts-node": "^3.3.0",
-    "typescript": "^2.5.3",
+    "typescript": "^2.6.2",
     "uri-templates": "^0.2.0"
   }
 }

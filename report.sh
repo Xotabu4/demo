@@ -1,0 +1,1 @@
+docker run -v "/Users/olekh/github/demo/allure-results:/allure" cashongo/allure-report-generator
