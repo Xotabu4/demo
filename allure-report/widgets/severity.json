@@ -1,10 +1,10 @@
 [ {
-  "uid" : "ac6d9c926ce99c12",
+  "uid" : "225aa09fa117615b",
   "name" : "should be successful",
   "time" : {
-    "start" : 1516646488386,
-    "stop" : 1516646489073,
-    "duration" : 687
+    "start" : 1516648822386,
+    "stop" : 1516648822871,
+    "duration" : 485
   },
   "status" : "passed",
   "severity" : "normal"

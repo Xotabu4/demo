@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --opts mocha.opts",
-    "generate": "allure generate",
-    "report": "allure open",
-    "allure": "allure"
+    "posttest": "allure generate --clean"
   },
   "repository": {
     "type": "git",

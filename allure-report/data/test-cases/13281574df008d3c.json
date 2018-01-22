@@ -1,5 +1,5 @@
 {
-  "uid" : "ac6d9c926ce99c12",
+  "uid" : "13281574df008d3c",
   "name" : "should be successful",
   "fullName" : "Search.should be successful",
   "historyId" : "977e9e860d5c83860808a7c811d1f0c2",
@@ -32,14 +32,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ac6d9c926ce99c12.json",
+  "source" : "13281574df008d3c.json",
   "parameterValues" : [ ]
 }
