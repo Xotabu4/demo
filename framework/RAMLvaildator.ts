@@ -35,7 +35,6 @@ function getResponseBodyDeclaration(uri: string, methodName: string = 'get', sta
 }
 
 export function validateBodyFor(uri: string, bodyObj: object, methodName: string = 'get', statusCode: string = '200') {
-    console.log(JSON.stringify(bodyObj))
     let status = getResponseBodyDeclaration(uri, methodName, statusCode).validateInstanceWithDetailedStatuses(bodyObj)
 
     if (status.length > 0) {
