@@ -1,101 +1,102 @@
 #%RAML 1.0
 title: HOTEL SEARCH API
 
-/search: 
-  get: 
-    responses:
-      200: 
-        body:
-          application/json:
-            type: | 
-              {
-                "type": "array",
-                "additionalProperties": false,
-                "items": {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                  "id": {
-                    "type": "integer"
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "stars": {
-                    "type": "number"
+/Xotabu4/demo:
+  /search:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type:
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "stars": {
+                      "type": "number"
+                    }
                   }
                 }
               }
   /search/{id}:
-    responses:
-      200: 
-        body:
-          application/json:
-            type: | 
-              {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                "id": {
-                  "type": "integer"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "stars": {
-                  "type": "number"
-                }
-              }      
-/comments:           
-  responses:
-    200: 
-      body:
-        application/json:
-          type: | 
-            {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-              "id": {
-                "type": "integer"
-              },
-              "comments": {
-                "type": "array"
-                "items": {
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type:
+                {
                   "type": "object",
-                  "additionalProperties": false,
                   "properties": {
-                  "postId": {
-                    "type": "number"
-                  },
-                  "body": {
-                    "type": "string"
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "stars": {
+                      "type": "number"
+                    }
                   }
                 }
-              },
-            }      
-/buy:
-  get:
-    responses:
-      200: 
-        body:
-          application/json:
-            type: | 
-              {
-                "additionalProperties": false,
-                "type": "object",
-                "properties": {
+  /comments:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type:
+                {
+                  "type": "object",
+                  "properties": {
                   "id": {
                     "type": "integer"
                   },
-                  "status": {
-                    "type": "integer"
-                  },
-                  "message": {
-                    "type": "string"
-                  },
-                  "code": {
-                    "type": "integer"
+                  "comments": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "postId": {
+                          "type": "number"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      }
+                     }
+                  }
                   }
                 }
-              }        
+  /buy/{id}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type:
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "integer"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "integer"
+                    }
+                  }
+                }

@@ -21,15 +21,15 @@
       "id": 1,
       "comments": [
         {
-          "body": "Very nice hotel! amazing",
+          "message": "Very nice hotel! amazing",
           "postId": 1
         },
         {
-          "body": "Not bad!",
+          "message": "Not bad!",
           "postId": 2
         },
         {
-          "body": "I like it!",
+          "message": "I like it!",
           "postId": 3
         }
       ]

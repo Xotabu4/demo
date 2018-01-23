@@ -24,3 +24,8 @@ Used technologies:
 - chai
 - allure reports
 - raml-parser
+
+
+## Allure
+add to mocha opts
+--reporter mocha-allure-reporter

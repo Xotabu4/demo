@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1516730647615' stop='1516730647657'>
+    <name>Search</name>
+    <title>Search</title>
+    <test-cases>
+        <test-case start='1516730647615' status='broken' stop='1516730647656'>
+            <name>should be successful</name>
+            <title>should be successful</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can not resolve ../api.raml</message>
+                <stack-trace>Error: Can not resolve ../api.raml
+                    at loadRAMLInternalHL (node_modules/raml-1-parser/src/parser/apiLoader.ts:187:15)
+                    at Object.loadApi (node_modules/raml-1-parser/src/parser/apiLoader.ts:98:18)
+                    at Object.loadApiSync (node_modules/raml-1-parser/src/index.ts:77:43)
+                    at parseAPI (test/search.ts:15:25)
+                    at Context.&lt;anonymous> (test/search.ts:21:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

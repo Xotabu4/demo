@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1516730191917' stop='1516730192658'>
+    <name>Search</name>
+    <title>Search</title>
+    <test-cases>
+        <test-case start='1516730191918' status='broken' stop='1516730192657'>
+            <name>should be successful</name>
+            <title>should be successful</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot find declaration for: get: 200: https://my-json-server.typicode.com/Xotabu4/demo/search</message>
+                <stack-trace>Error: Cannot find declaration for: get: 200: https://my-json-server.typicode.com/Xotabu4/demo/search
+                    at getResponseBodyDeclaration (framework/RAMLvaildator.ts:32:15)
+                    at Object.validateBodyFor (framework/RAMLvaildator.ts:37:18)
+                    at APIRequest.validateAgainstRAML (framework/APIrequest.ts:71:7)
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:160:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

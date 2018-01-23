@@ -3,8 +3,7 @@ import * as request from 'request'
 import * as requestPromise from 'request-promise-native'
 import { URL } from 'url'
 
-// not implemented yet
-// import { RAMLValidator } from './RAMLvalidator'
+import { validateBodyFor } from './RAMLvaildator'
 
 export class APIRequest {
   protected client = requestPromise
@@ -46,8 +45,7 @@ export class APIRequest {
     // Sending request with collected options, will be merged with default params.
     let response = (this.client(this.options)) as Promise<request.RequestResponse>
     this.logResponse(response)
-    return response
-    //return this.validateAgainstRAML(response)
+    return this.validateAgainstRAML(response)
   }
 
   private async logResponse(responsePromise: Promise<request.RequestResponse>) {
@@ -57,16 +55,28 @@ export class APIRequest {
       console.log(`RESPONSE BODY: ${JSON.stringify(response.body, null, 2)}`)
     } catch (error) {
       if (error.response) {
-        console.log(`${this.options.method}:${error.response.statusCode}: ${this.options.uri} took: ${error.response.timingPhases.total} ms`)
-        console.log(`RESPONSE BODY: ${JSON.stringify(error.response.body, null, 2)}`)
+        console.warn(`${this.options.method}:${error.response.statusCode}: ${this.options.uri} took: ${error.response.timingPhases.total} ms`)
+        console.warn(`RESPONSE BODY: ${JSON.stringify(error.response.body, null, 2)}`)
       } else {
-        console.log(error.message || error);
+        console.warn(error.message || error);
       }
     }
   }
 
-  private validateAgainstRAML(response: Promise<request.RequestResponse>): Promise<request.RequestResponse> {
-    return
-    // new ResponseRAMLValidator(resp, { ignoreMissingRAML: true }).validate()
+  private async validateAgainstRAML(response: Promise<request.RequestResponse>): Promise<request.RequestResponse> {
+    var uri = null
+    //try {
+      
+      let resp = await response
+      uri = resp.request['href'].toString()
+      
+      validateBodyFor(uri, resp.body)
+      console.log(`Validation against RAML documentation for ${uri} passed`)
+    // } catch (error) {
+    //   console.error(`Validation against RAML documentation for ${uri} FAILED`)
+    //   error.response = response
+    //   throw error
+    // }
+    return response
   }
 }
