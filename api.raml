@@ -3,30 +3,77 @@ title: HOTEL SEARCH API
 
 /search: 
   get: 
-    queryParameters:
-      location:
-        description: "Location to search"
-        example: london
-        required: true
-        type: string
     responses:
       200: 
         body:
           application/json:
             type: | 
               {
-                "title": "Hello world Response",
-                "type": "object",
-                "properties": {
-                  "message": {
+                "type": "array",
+                "additionalProperties": false,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "name": {
                     "type": "string"
+                  },
+                  "stars": {
+                    "type": "number"
                   }
                 }
               }
-            example:
+  /search/{id}:
+    responses:
+      200: 
+        body:
+          application/json:
+            type: | 
               {
-                "message": "Hello world"
-              }
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "stars": {
+                  "type": "number"
+                }
+              }      
+/comments:           
+  responses:
+    200: 
+      body:
+        application/json:
+          type: | 
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "comments": {
+                "type": "array"
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                  "postId": {
+                    "type": "number"
+                  },
+                  "body": {
+                    "type": "string"
+                  }
+                }
+              },
+            }      
 /buy:
   get:
     responses:
@@ -35,18 +82,20 @@ title: HOTEL SEARCH API
           application/json:
             type: | 
               {
-                "title": "Purchase response",
+                "additionalProperties": false,
                 "type": "object",
                 "properties": {
+                  "id": {
+                    "type": "integer"
+                  },
+                  "status": {
+                    "type": "integer"
+                  },
                   "message": {
                     "type": "string"
-                  }
-                  "status": {
-                    "type": "number"
+                  },
+                  "code": {
+                    "type": "integer"
                   }
                 }
-              }
-            example:
-              {
-                "message": "Bought!"
-              }         
+              }        
