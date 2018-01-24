@@ -1,12 +1,12 @@
 {
-  "uid" : "13281574df008d3c",
+  "uid" : "674a6419d0d6e8ac",
   "name" : "should be successful",
   "fullName" : "Search.should be successful",
   "historyId" : "977e9e860d5c83860808a7c811d1f0c2",
   "time" : {
-    "start" : 1516646488386,
-    "stop" : 1516646489073,
-    "duration" : 687
+    "start" : 1516813476665,
+    "stop" : 1516813477385,
+    "duration" : 720
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -32,12 +32,14 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
-  "retry" : true,
+  "hidden" : false,
+  "retry" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "13281574df008d3c.json",
+  "source" : "674a6419d0d6e8ac.json",
   "parameterValues" : [ ]
 }

@@ -1,0 +1,45 @@
+{
+  "uid" : "2694be389d9dc838",
+  "name" : "first can be purchased",
+  "fullName" : "Purchase.first can be purchased",
+  "historyId" : "15f6ac1d65887c774bd127c07746f3f0",
+  "time" : {
+    "start" : 1516813479145,
+    "stop" : 1516813480051,
+    "duration" : 906
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Purchase"
+  }, {
+    "name" : "testClass",
+    "value" : "Purchase"
+  }, {
+    "name" : "testMethod",
+    "value" : "first can be purchased"
+  }, {
+    "name" : "package",
+    "value" : "Purchase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2694be389d9dc838.json",
+  "parameterValues" : [ ]
+}

@@ -3,13 +3,37 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "should be successful",
-    "uid" : "225aa09fa117615b",
+    "uid" : "674a6419d0d6e8ac",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1516648822386,
-      "stop" : 1516648822871,
-      "duration" : 485
+      "start" : 1516813476665,
+      "stop" : 1516813477385,
+      "duration" : 720
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "can be retrived for all hotels from search results",
+    "uid" : "1e59b537fef2a787",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1516813477394,
+      "stop" : 1516813479142,
+      "duration" : 1748
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "first can be purchased",
+    "uid" : "2694be389d9dc838",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1516813479145,
+      "stop" : 1516813480051,
+      "duration" : 906
     },
     "flaky" : false,
     "parameters" : [ ]

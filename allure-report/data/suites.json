@@ -5,17 +5,49 @@
     "name" : "Search",
     "children" : [ {
       "name" : "should be successful",
-      "uid" : "225aa09fa117615b",
+      "uid" : "674a6419d0d6e8ac",
       "parentUid" : "be3151f8b882d0c00c9fb35012f49657",
       "status" : "passed",
       "time" : {
-        "start" : 1516648822386,
-        "stop" : 1516648822871,
-        "duration" : 485
+        "start" : 1516813476665,
+        "stop" : 1516813477385,
+        "duration" : 720
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "be3151f8b882d0c00c9fb35012f49657"
+  }, {
+    "name" : "Comments",
+    "children" : [ {
+      "name" : "can be retrived for all hotels from search results",
+      "uid" : "1e59b537fef2a787",
+      "parentUid" : "df343c296ade57ed1208b4bfb97c0aef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1516813477394,
+        "stop" : 1516813479142,
+        "duration" : 1748
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "df343c296ade57ed1208b4bfb97c0aef"
+  }, {
+    "name" : "Purchase",
+    "children" : [ {
+      "name" : "first can be purchased",
+      "uid" : "2694be389d9dc838",
+      "parentUid" : "e207c4a5d4d94cd492fd91ec76f085e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1516813479145,
+        "stop" : 1516813480051,
+        "duration" : 906
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e207c4a5d4d94cd492fd91ec76f085e0"
   } ]
 }
