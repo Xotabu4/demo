@@ -4,6 +4,15 @@ import { CommentsController } from "../framework/controllers/commentsController"
 import { PurchaseController } from "../framework/controllers/buyController";
 import { assert } from "chai";
 
+/**
+ * What happens in this test:
+ * 
+ * 1) Requesting some default model from builder, we don't care what exaclty, just any valid
+ * 2) Creating special corresponding Controller object, that handles all manipulations with request
+ * 3) Controller must accept SearchParams type to perform search, we don't care at all where you got it
+ * 4) Request is prepared and sent by APIrequest module
+ * 5) Response is validated against ./api.raml documentation file
+ */
 describe('Search', function () {
     it('should be successful', async function () {
         let searchParams = new SearchParamsBuilder().build()
