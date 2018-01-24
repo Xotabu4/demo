@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Xotabu4/demo.git"
   },
+  "typings": "./index.d.ts",
   "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
   "license": "MIT",
   "bugs": {

@@ -18,7 +18,7 @@ function getResponseBodyDeclaration(uri: string, methodName: string = 'get', sta
         let API = parseAPI()
         let parsedURL = new URL(uri) // .pathname
         for (let resource of API.allResources()) {
-            console.log('Trying to match:', parsedURL.pathname, resource.completeRelativeUri())
+            // console.log('Trying to match:', parsedURL.pathname, resource.completeRelativeUri())
             if (URItemplate(resource.completeRelativeUri()).test(parsedURL.pathname)) {
                 let methodNode = resource.childMethod(methodName.toLowerCase())[0]
                 for (const resp of methodNode.responses()) {

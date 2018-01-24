@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1516810239532' stop='1516810240257'>
+    <name>Comments</name>
+    <title>Comments</title>
+    <test-cases>
+        <test-case start='1516810239532' status='broken' stop='1516810240256'>
+            <name>can be retrived for all hotels from search results</name>
+            <title>can be retrived for all hotels from search results</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot find declaration for: get: 200: https://my-json-server.typicode.com/Xotabu4/demo/comments/1</message>
+                <stack-trace>Error: Cannot find declaration for: get: 200: https://my-json-server.typicode.com/Xotabu4/demo/comments/1
+                    at getResponseBodyDeclaration (framework/RAMLvaildator.ts:33:15)
+                    at Object.validateBodyFor (framework/RAMLvaildator.ts:38:18)
+                    at APIRequest.validateAgainstRAML (framework/APIrequest.ts:73:7)
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:160:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,5 +1,6 @@
-export interface IHotels {
-    [index: number]: IHotel
+export interface IHotels extends Array<IHotel>{
+    //[Symbol.iterator](): IHotel
+    //[index: number]: IHotel
 }
 
 

@@ -47,7 +47,7 @@ title: HOTEL SEARCH API
                     }
                   }
                 }
-  /comments:
+  /comments/{1}:
     get:
       responses:
         200:
@@ -57,23 +57,23 @@ title: HOTEL SEARCH API
                 {
                   "type": "object",
                   "properties": {
-                  "id": {
-                    "type": "integer"
-                  },
-                  "comments": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "postId": {
-                          "type": "number"
-                        },
-                        "message": {
-                          "type": "string"
+                    "id": {
+                      "type": "integer"
+                    },
+                    "comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "postId": {
+                            "type": "number"
+                          },
+                          "message": {
+                            "type": "string"
+                          }
                         }
                       }
-                     }
-                  }
+                    }
                   }
                 }
   /buy/{id}:
