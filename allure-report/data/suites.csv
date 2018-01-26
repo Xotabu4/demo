@@ -1,4 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","Comments.can be retrived for all hotels from search results","1748",""
-"passed","Purchase.first can be purchased","906",""
-"passed","Search.should be successful","720",""
