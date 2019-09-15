@@ -4,9 +4,9 @@ import { ISearchCriterias } from "../models/search";
 import { IHotels } from "../models/hotel";
 
 export class SearchController extends BaseController {
-    async search(searchCriterias: ISearchCriterias): Promise<IHotels> {
+    async search(searchCriterias: ISearchCriterias): Promise<IComments> {
         return (await new APIRequest(`/search`)
             .queryParameters(searchCriterias)
-            .send()).body as IHotels
+            .send()).body as IComments
     }
 }
