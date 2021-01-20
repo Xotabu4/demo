@@ -1,4 +1,4 @@
-# Typescript tests against fake API server
+# Old Demo: Typescript tests against fake API server
 
 This project is for API tests presentation as demo code
 
